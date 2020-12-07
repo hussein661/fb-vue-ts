@@ -33,7 +33,7 @@ import { Component, Emit, Prop, Vue } from "vue-property-decorator";
 
 @Component
 export default class Post extends Vue {
-  @Prop(Object) readonly post!: object
+  @Prop(Object) readonly post!: any
   private likes = 0
   private isCommentBoxOpened = false
   commentBody = ''
